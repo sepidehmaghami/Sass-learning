@@ -1,0 +1,35 @@
+body {
+    background-image: url(../image/lena.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+//Mixin
+@mixin disply-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.head {
+    padding-left: 50px;
+    @include disply-flex();
+    justify-content: space-between;
+    background-color: transparentize($color: gray, $amount: 0.4);
+    ul {
+        @include disply-flex();
+        align-items: center;
+        padding-right: 50px;
+        li {
+            list-style: none;
+            margin: 0px 20px;
+            cursor: pointer;
+            a {
+                text-decoration: none;
+                color: darkred;
+                font-size: 25px;
+                font-weight: bold;
+            }
+        }
+    }
+}

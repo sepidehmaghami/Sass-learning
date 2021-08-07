@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(253, 179, 154);
+    margin: 0;
+}
+
+//Mixin
+@mixin disply-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.head {
+    position: fixed;
+    width: 100%;
+    padding-left: 50px;
+    @include disply-flex();
+    justify-content: space-between;
+    background-color: transparentize($color: gray, $amount: 0.7);
+    ul {
+        @include disply-flex();
+        align-items: center;
+        padding-right: 50px;
+        li {
+            list-style: none;
+            margin: 0px 20px;
+            cursor: pointer;
+            a {
+                text-decoration: none;
+                color: darkred;
+                font-size: 25px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+article {
+    @include disply-flex();
+    flex-direction: column;
+    align-items: center;
+    ul {
+        @extend article;
+        font-family: sans-serif;
+        li {
+            list-style: none;
+        }
+    }
+}
+
+$colors-h3:(1:blue, 2:green, 3:red);
+@for $i from 1 to 4 {
+    .h3-#{$i} {
+        color: map-get($map: $colors-h3, $key: $i);
+        font-family: cursive;
+    }
+}
+
+.h3-1 {
+    padding-top: 80px;
+}

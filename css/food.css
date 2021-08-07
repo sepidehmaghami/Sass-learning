@@ -1,0 +1,87 @@
+body {
+  background-color: #fdb39a;
+  margin: 0;
+}
+
+.head {
+  position: fixed;
+  width: 100%;
+  padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+.head ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 50px;
+}
+
+.head ul li {
+  list-style: none;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+.head ul li a {
+  text-decoration: none;
+  color: darkred;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+article, article ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+article ul {
+  font-family: sans-serif;
+}
+
+article ul li {
+  list-style: none;
+}
+
+.h3-1 {
+  color: blue;
+  font-family: cursive;
+}
+
+.h3-2 {
+  color: green;
+  font-family: cursive;
+}
+
+.h3-3 {
+  color: red;
+  font-family: cursive;
+}
+
+.h3-1 {
+  padding-top: 80px;
+}
+/*# sourceMappingURL=food.css.map */

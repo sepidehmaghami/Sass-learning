@@ -2,44 +2,25 @@ body {
   background-image: url(../image/lena.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0;
-}
+  margin: 0; }
 
 .head {
   padding-left: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: rgba(128, 128, 128, 0.6);
-}
-
-.head ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-right: 50px;
-}
-
-.head ul li {
-  list-style: none;
-  margin: 0px 20px;
-  cursor: pointer;
-}
-
-.head ul li a {
-  text-decoration: none;
-  color: darkred;
-  font-size: 25px;
-  font-weight: bold;
-}
-/*# sourceMappingURL=style.css.map */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgba(128, 128, 128, 0.6); }
+  .head ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-right: 50px; }
+    .head ul li {
+      list-style: none;
+      margin: 0px 20px;
+      cursor: pointer; }
+      .head ul li a {
+        text-decoration: none;
+        color: darkred;
+        font-size: 25px;
+        font-weight: bold; }

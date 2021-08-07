@@ -1,8 +1,10 @@
 # Sass-learning
 Implemented with HTML5 and SASS
 
-![Uploading home.PNG…]()
+*To transfer scss to css, enter the watch sass option in your VSCode*
 
-![Uploading lena.jpg…]()
+*Or enter the following command in your terminal*
+```
+node-sass -o css css/style.scss
+```
 
-![Uploading picture.PNG…]()

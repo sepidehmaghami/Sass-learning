@@ -8,10 +8,10 @@ Implemented with HTML5 and SASS
 ```sass
 node-sass -o css css/style.scss
 ```
-```
+```react
 node-sass -o css css/food.scss
 ```
-```
+```python
 node-sass -o css css/picture.scss
 ```
 
